@@ -1,5 +1,5 @@
-import { DashboardSalesComparisionItem } from "./ex.model"
-
+import { BarChartOptions, DashboardSalesComparisionItem } from "./ex.model"
+import * as d3 from 'd3';
 export const MONTH_NAME = [
     {
         name: 'Jan',
@@ -65,3 +65,16 @@ export const SALE_COMPARISION: DashboardSalesComparisionItem[] = [
     {month: 11, previousYear: 5000, currentYear: 10000, lastTwoYear: 20000, lastThreeYear: 30000},
     {month: 12, previousYear: 5000, currentYear: 10000, lastTwoYear: 20000, lastThreeYear: 30000},
 ]
+
+export const BAR_CHART_OPTIONS_DEFAULT: BarChartOptions = {
+    width: 450,
+    height: 250,
+    margin: {
+        top: 40,
+        right: 40,
+        bottom: 40,
+        left: 40
+    },
+    backgroundColor: '#eeeeee',
+    colors: d3.schemeSet3
+}
