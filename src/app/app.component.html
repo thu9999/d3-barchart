@@ -1,3 +1,12 @@
-<app-bar-chart [data]="barChartData" [options]="options"></app-bar-chart>
-
-<button (click)="handleChangeData()">Change data</button>
+<div style="display: flex; justify-content: center;">
+  <select [ngModel]="employeeSelected" (ngModelChange)="onEmployeeChange($event)"
+  class="tw-form-control-select capitalize">
+  <option value="-1" selected>--All--</option>
+  <option value="1">
+      ex</option>
+</select>
+</div>
+<div style="display: flex; justify-content: center;">  
+  <div id="barChart" style="position: relative; width: 60vw; height: 70vh;">
+  </div>
+</div>

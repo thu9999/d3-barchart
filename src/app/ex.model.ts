@@ -15,18 +15,3 @@ export interface DashboardSalesComparision {
     items: DashboardSalesComparisionItem[];
     bestMonth: DashboardSalesComparisionBestSummary
 }
-
-export class BarChartOptions {
-    width: number;
-    height: number;
-    margin: Margin;
-    backgroundColor: string;
-    colors: any;
-}
-
-export class Margin {
-    top: number;
-    right: number;
-    bottom: number;
-    left: number;
-}
