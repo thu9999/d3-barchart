@@ -5,8 +5,7 @@ import { MONTH_NAME } from 'src/app/ex.const';
 
 @Component( {
     selector: 'app-bar-chart',
-    templateUrl: './bar-chart.component.html',
-    styleUrls: ['./bar-chart.component.scss']
+    templateUrl: './bar-chart.component.html'
 } )
 export class BarChartComponent implements OnChanges {
     @ViewChild( 'chartContainer', { static: true } ) chartContainerRef: ElementRef;
